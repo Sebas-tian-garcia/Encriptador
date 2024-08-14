@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo__alura" src="./asesst/Logo.png" alt="logo de Alura">
+        </a>
+    </header>
+
+    <main class="inicio">
+        <section class="lado__izquierdo">
+            <h1>
+                <textarea class="input_text" placeholder="Ingrese el texto aqui" id="textoIntroducido"></textarea>
+            </h1>
+                <div>
+                <p class="inicio__condicion">
+                    <img src="./asesst/Group.png">
+                    Solo letras minúsculas y sin acentos</p>
+                </div>    
+                <div class="botones">    
+                    <button class="inicio__boton" onclick="encriptarTexto();"> Encriptar</button>
+                    <button class="inicio__boton__dos" onclick="desencriptarTexto();"> Desencriptar</button>
+                </div>
+        </section>
+            
+            <div class="lado__derecho">
+                    <img class="muñeco__de__foto" src="./asesst/Muñeco.png" alt="Muñeco foto" id="imagenMuñeco">
+                    <textarea class="validacion" id="textoEncriptado" readonly>Ningún mensaje fue encontrado</textarea>
+                    <a class="validacion__mensaje" id="mensaje__validacion">Ingresa el texto que desees encriptar o desencriptar.</a>
+                <div class="boton__copy">
+                    <button class="boton__copiar" id="botonCopiar" style="display: none;" onclick="copiarTexto();">Copiar texto</button>
+                </div>
+            </div>
+    </main>  
+     
+
+    <footer class="designed">
+        <p> 
+            Desarrolado por Johan Garcia
+        </p>
+        <div class="link">    
+            <a href="https://github.com/Sebas-tian-garcia"> <img src="./asesst/Logo Github (1).png" ></a>
+            <a href="https://www.linkedin.com/in/sebast%C3%ADan-garcia-40025b17a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <img src="./asesst/Logo linkedin.png"> </a>   
+        </div>
+    </footer>
+ 
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fuente-inter: "Libre Baskerville", serif;
+    --color--morado: purple;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: #D8DFE8;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    width: 85%;
+    margin: auto 40px auto auto;
+    
+}
+
+.lado__izquierdo{
+    color: var(--color--morado);
+    font-family: var(--fuente-inter);
+    width: 600px;   
+}
+
+.input_text {
+    color: var(--color--morado);
+    font-size: 1.8rem;
+    background-color: #D8DFE8;
+    border: none; 
+    padding: 10px;
+    border-radius: 0;
+    outline: none;
+    height: 300px;
+    width: 100%;
+    
+}
+
+.input_text::placeholder {
+    color: var(--color--morado); 
+    opacity: 1;
+    font-family: var(--fuente-inter) 
+}
+
+
+.inicio__condicion {
+    font-size: 0.75rem;
+    color: gray;
+    font-family: var(--fuente-inter);
+    display: flex;
+    gap:8px;
+}
+
+.botones{
+    display: flex;
+    gap: 24px;
+}
+
+.inicio__boton{
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    color: white;
+    background-color: var(--color--morado);
+    text-align: center;
+    padding: 24px;
+    border-radius: 24px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    width: 350px;
+}
+
+.inicio__boton__dos{
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    background-color: #D8DFE8;
+    color: var(--color--morado);
+    text-align: center;
+    padding: 24px;
+    border-radius: 24px;
+    border: 2px solid var(--color--morado);
+    text-decoration: none;
+    cursor: pointer;
+    width: 350px;
+}
+.lado__derecho {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-inter);
+    gap: 15px;
+    border-radius: 32px;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 40px;
+    align-items:center;
+    text-align: center;
+    box-shadow: 0px 0px 20px 15px var(--color--morado)
+    
+    
+}
+
+.validacion {
+    font-size: 1.2rem;
+    font-family: var(--fuente-inter);
+    color: var(--color--morado);
+    overflow: hidden;
+    height: 78%;
+    width: 80%;
+    border: none; 
+    padding: 6px;
+    border-radius: 32px;
+    outline: none;
+    text-align: center;
+    overflow-y: auto;
+    resize: none;
+}
+.validacion::placeholder{
+    color: var(--color-white);
+}
+
+.validacion__mensaje{
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+}
+
+
+.boton__copiar {
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    background-color: #D8DFE8;
+    color: var(--color--morado);
+    text-align: center;
+    border-radius: 24px;
+    border: 2px solid var(--color--morado);
+    text-decoration: none;
+    cursor: pointer;
+    width: 336px;
+    padding: 24px;
+}
+
+.designed {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    gap: 5px;
+    box-shadow: 0px 0px 20px 8px var(--color--morado);     
+    background-color: var(--color--morado);
+}
+
+@media (max-width: 1100px) {
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .muñeco__de__foto{
+        display: none;
+    }
+    .validacion{
+        width: 640px;
+        height: 200px;
+    }
+    .lado__derecho{
+        padding: 24PX;
+        width: 640px;
+        height: 300px;;
+    }
+}
+
+@media (max-width: 720px) {
+    .lado__izquierdo {
+        padding: 90px;
+    }
+    .inicio__condicion{
+        display: flex;
+        text-align: center;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inicio__boton{
+        width: 500px;
+    }
+    .inicio__boton__dos{
+        width: 500px;
+    }
+    .lado__derecho {
+        width: 500px;
+    }
+    .validacion {
+        width: 500px;
+    }
+    
+}
+    
+@media (max-width: 450px) {
+    .lado__izquierdo {
+        padding: 150px;
+        width: 570px;
+    }
+    .inicio__condicion{
+        display: flex;
+        text-align: center;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inicio__boton{
+        width: 260px;
+    }
+    .inicio__boton__dos{
+        width: 260px;
+    }
+    .boton__copiar{
+        width: 260px;
+    }
+    .lado__derecho {
+        width: 300px;
+    }
+    .validacion {
+        width: 300px;
+    }
+    
+}
