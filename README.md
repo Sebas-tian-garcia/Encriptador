@@ -19,4 +19,4 @@ Este proyecto es una implementación simple en HTML, CSS y JavaScript que permit
 1. **Clona el repositorio o descarga los archivos**:
 
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/Sebas-tian-garcia/encriptador.git
